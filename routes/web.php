@@ -24,4 +24,8 @@
 
 Auth::routes();
 
-Route::get('/admin', 'HomeController@index')->name('home');
+Route::get('/admin', 'HomeController@index')->name('index');
+
+Route::get('/banner', 'BannersController@index')->name('banner');
+
+

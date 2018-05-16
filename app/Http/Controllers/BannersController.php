@@ -2,11 +2,16 @@
 
 namespace Lotus\Http\Controllers;
 
-use Lotus\Home;
+use Lotus\Banner;
 use Illuminate\Http\Request;
 
-class HomesController extends Controller
+class BannersController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -14,9 +19,9 @@ class HomesController extends Controller
      */
     public function index()
     {
-        $homes = Home::all();
+        $banners = Banner::all();
 
-        return view('admin.home.home', ['homes' => $homes]);
+        return view('admin.banner.banner', ['banners' => $banners]);
     }
 
     /**
@@ -43,10 +48,10 @@ class HomesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \Lotus\Home  $home
+     * @param  \Lotus\Banner  $banner
      * @return \Illuminate\Http\Response
      */
-    public function show(Home $home)
+    public function show(Banner $banner)
     {
         //
     }
@@ -54,10 +59,10 @@ class HomesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \Lotus\Home  $home
+     * @param  \Lotus\Banner  $banner
      * @return \Illuminate\Http\Response
      */
-    public function edit(Home $home)
+    public function edit(Banner $banner)
     {
         //
     }
@@ -66,10 +71,10 @@ class HomesController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \Lotus\Home  $home
+     * @param  \Lotus\Banner  $banner
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Home $home)
+    public function update(Request $request, Banner $banner)
     {
         //
     }
@@ -77,10 +82,10 @@ class HomesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \Lotus\Home  $home
+     * @param  \Lotus\Banner  $banner
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Home $home)
+    public function destroy(Banner $banner)
     {
         //
     }

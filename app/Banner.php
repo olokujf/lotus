@@ -4,7 +4,7 @@ namespace Lotus;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Home extends Model
+class Banner extends Model
 {
     public $timestamps = false;
 }

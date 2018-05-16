@@ -9,14 +9,13 @@
 
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}" defer></script>
+<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 
 <!-- Fonts -->
 <link rel="dns-prefetch" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
 
-<!-- Bootstrap core CSS -->
-{{--<link href="/bootstrap/admin/css/bootstrap.min.css" rel="stylesheet">--}}
-
 <!-- Styles -->
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-{{--<link href="/css/admin/lotus.css" rel="stylesheet">--}}
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">

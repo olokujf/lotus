@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace Lotus\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

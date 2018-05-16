@@ -11,10 +11,17 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+//
+//Route::get('/admin', function (){
+//    return view('admin.login');
+//});
 
-Route::get('/admin', function (){
-    return view('admin.layout');
-});
+//Route::get('home', 'HomesController@index')->name('adminHome');
+//Route::resource('homes', 'HomesController');
+
+Auth::routes();
+
+Route::get('/admin', 'HomeController@index')->name('home');

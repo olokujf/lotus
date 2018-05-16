@@ -18,6 +18,7 @@ class CreateHomesTable extends Migration
             $table->string('titulo');
             $table->string('descricao');
             $table->string('foto');
+            $table->boolean('ativo')->unique();
             $table->timestamps();
         });
     }

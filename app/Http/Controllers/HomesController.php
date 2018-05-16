@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Lotus\Http\Controllers;
 
-use App\Home;
+use Lotus\Home;
 use Illuminate\Http\Request;
 
 class HomesController extends Controller
@@ -14,7 +14,9 @@ class HomesController extends Controller
      */
     public function index()
     {
-        //
+        $homes = Home::all();
+
+        return view('admin.home.home', ['homes' => $homes]);
     }
 
     /**
@@ -41,7 +43,7 @@ class HomesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Home  $home
+     * @param  \Lotus\Home  $home
      * @return \Illuminate\Http\Response
      */
     public function show(Home $home)
@@ -52,7 +54,7 @@ class HomesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Home  $home
+     * @param  \Lotus\Home  $home
      * @return \Illuminate\Http\Response
      */
     public function edit(Home $home)
@@ -64,7 +66,7 @@ class HomesController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Home  $home
+     * @param  \Lotus\Home  $home
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Home $home)
@@ -75,7 +77,7 @@ class HomesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Home  $home
+     * @param  \Lotus\Home  $home
      * @return \Illuminate\Http\Response
      */
     public function destroy(Home $home)

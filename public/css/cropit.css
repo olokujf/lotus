@@ -1,0 +1,42 @@
+.cropit-preview {
+    background-color: #f8f8f8;
+    background-size: cover;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 7px;
+    width: 600px;
+    height: 250px;
+}
+
+.cropit-preview-image-container {
+    cursor: move;
+}
+
+.cropit-image-zoom-input{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.image-size-label {
+    margin-top: 10px;
+}
+
+.mgt{
+    margin-top: 10px;
+}
+
+.f-f-img-lg{
+    font-size: 36px;
+}
+
+.f-f-img-md{
+    font-size: 24px;
+}
+
+/*input, .export {*/
+    /*display: block;*/
+/*}*/
+
+/*button {*/
+    /*margin-top: 10px;*/
+/*}*/
